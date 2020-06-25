@@ -8,6 +8,7 @@ Todoリスト
 
 ・本番環境
 
+https://vast-inlet-49583.herokuapp.com/
 
 
 ・制作背景
@@ -15,6 +16,11 @@ Todoリスト
 Trelloのような便利なTodoアプリを作成してみたかった。
 
 ・DEMO
+
+メールアドレス：test@gmail.com
+
+パスワード：123456
+
 
 　
 
