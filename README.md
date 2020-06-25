@@ -1,24 +1,50 @@
-# README
+・アプリ名
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Todoリスト
 
-Things you may want to cover:
+・概要
 
-* Ruby version
+リストの作成、編集、削除、リストチェック
 
-* System dependencies
+・本番環境
 
-* Configuration
 
-* Database creation
 
-* Database initialization
+・制作背景
 
-* How to run the test suite
+Trelloのような便利なTodoアプリを作成してみたかった。
 
-* Services (job queues, cache servers, search engines, etc.)
+・DEMO
 
-* Deployment instructions
+　
 
-* ...
+・工夫したポイント
+
+
+
+・使用技術
+
+HTML/CSS,Ruby on Rails,JavaScript, MySQL, Git
+
+・課題や今後実装したい機能
+
+ログイン、ログアウト、リスト詳細、カードの作成
+
+・DB設計
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|email|string|null: false|
+|password|string|null: false|
+|nickname|string|null: false|
+### Association
+- has_many :tasks
+
+
+## listテーブル
+|Column|Type|Options|
+|------|----|-------|
+|text|text||
+|user_id|integer|null: false, foreign_key: true|
+### Association
+- belongs_to :user
